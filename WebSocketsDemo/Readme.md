@@ -1,3 +1,6 @@
+#### Readme 
+A simple app that has 2 components : A server and client. Each new tab at localhost serves as a new client. Can be used as group chat.
+
 ### Server
 
 The server runs using NodeJS + Typescript
