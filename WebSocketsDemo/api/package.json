@@ -1,0 +1,23 @@
+{
+  "name": "webSocketServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "start": "ts-node src/index.ts",
+    "watch": "nodemon --exec ts-node src/index.ts --watch src/ -e ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/websocket": "^1.0.2",
+    "http": "0.0.1-security",
+    "websocket": "^1.0.34"
+  },
+  "devDependencies": {
+    "tslint": "^6.1.3"
+  }
+}
