@@ -14,4 +14,4 @@
 2. `npm install`
 3. `npm start`
 
-### Medium Article:
+### Medium Article: https://bhandarkar.medium.com/going-real-time-with-typescript-and-websockets-fe11d1447f44
