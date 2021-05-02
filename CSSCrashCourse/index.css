@@ -1,0 +1,202 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+/* The following will clear any floats above it */
+.clr {
+  clear: both;
+}
+
+body {
+  background-color: #dbb4b49f;
+  color: #ff0000;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+  /*Same as above*/
+  font: normal 16px Arial, Helvetica, sans-serif;
+
+  line-height: 1.6em;
+  margin: 0;
+}
+
+/*links*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Color specific states  */
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: green;
+}
+
+a:visited {
+  color: black;
+}
+
+.container {
+  width: 80%;
+  margin: auto; /*Makes the stuff in the center */
+}
+
+.box-1 {
+  background-color: #bef5cf9f;
+  padding: 10px;
+  border: 3px #ff0000 dashed;
+}
+
+/* The second thing is the tage */
+.box-1 h1 {
+  color: green;
+}
+
+.box-2 {
+  padding: 50px;
+  border: 2px grey dotted;
+}
+
+.box-2 h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+}
+
+.categories {
+  border: 1px #240c0c solid;
+  padding: 10px 50px;
+  border-radius: 15px;
+}
+
+.categories h2 {
+  text-align: center;
+}
+
+.categories ul {
+  list-style-type: none;
+}
+
+.categories li {
+  padding-bottom: 8px;
+  border-bottom: dotted 1px black;
+  /* For the next line to work, you need an image with
+   ACTUAL display size dimensions  */
+  /* list-style-image: url("../images/check.png"); */
+}
+
+.my-form {
+  padding: 20px;
+}
+
+.my-form .form-group {
+  padding-bottom: 15px;
+}
+
+.my-form label {
+  display: block;
+}
+
+.my-form input[type="text"],
+.my-form textarea {
+  padding: 8px;
+  width: 100%;
+}
+
+.button {
+  background-color: teal;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: red;
+  color: white;
+}
+
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  /* It takes in padding, border etc and considers 
+  when applying width */
+  box-sizing: border-box;
+}
+
+#main-block {
+  float: left;
+  width: 70%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: right;
+  width: 30%;
+  background-color: gray;
+  color: white;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.p-box {
+  height: 500px;
+  border: 1px solid black;
+  margin-top: 30px;
+  position: relative; /*Enables Children to have Relative */
+  background-image: url("bgimage.jpg");
+  background-repeat: no-repeat;
+  /* background-position: 100px 200px; */
+  background-position: center center;
+  background-size: cover;
+}
+
+.p-box h1 {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+}
+
+.p-box h3 {
+  position: absolute;
+  bottom: 16px;
+  right: 50px;
+}
+
+.fix-me {
+  position: fixed;
+  top: 400px;
+}
+
+.my-list li:nth-child(even) {
+  background: gray;
+  color: white;
+}
+
+.my-list li:nth-child(odd) {
+  background: pink;
+  color: white;
+}
+
+.my-list li:first-child {
+  background: red;
+  color: white;
+}
+
+.my-list li:last-child {
+  background: blue;
+  color: white;
+}
+
+.my-list li:nth-child(5) {
+  background: green;
+  color: white;
+}
