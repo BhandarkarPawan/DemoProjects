@@ -52,7 +52,14 @@ const ChatRoom: React.FC<Props> = () => {
     setError(null);
     setLoggedIn(true);
   };
+
   console.log("render");
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    sendMessage(message);
+  };
+
   return (
     <div>
       <Form>
@@ -79,10 +86,7 @@ const ChatRoom: React.FC<Props> = () => {
                   <Button
                     variant="primary"
                     type="Submit"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      sendMessage(message);
-                    }}
+                    onClick={handleSubmit}
                   >
                     Send
                   </Button>
@@ -100,13 +104,7 @@ const ChatRoom: React.FC<Props> = () => {
                 />
                 <Form.Text className="text-muted"></Form.Text>
               </Form.Group>
-              <Button
-                variant="primary"
-                type="Submit"
-                onClick={() => {
-                  login();
-                }}
-              >
+              <Button variant="primary" type="Submit" onClick={login}>
                 Login
               </Button>
             </>
