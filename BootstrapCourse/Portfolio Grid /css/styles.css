@@ -1,0 +1,32 @@
+#main-header img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  #main-header img {
+    max-height: 395px;
+    max-width: 395px;
+  }
+}
+
+#main-header #slogan {
+  background-color: black;
+  color: white;
+}
+
+#main-header .port-item {
+  width: 30%;
+}
+
+#main-header .port-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media (min-width: 1199px) {
+  .port-item {
+    padding: 3em !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,59 @@
+$home-height:700px;
+
+@mixin check-mark($color, $background) {
+  background: $background;
+  color: $color;
+  padding:5px;
+  border-radius:5px
+}
+
+body {
+  background: #333;
+  color: #fff
+}
+
+.navbar {
+  border-bottom: #008ed6 3px solid;
+  opacity: 0.8;
+}
+
+#home-section {
+  background: url(../../img/meet.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height:$home-height;
+
+  .dark-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    min-height: $home-height;
+    background: rgba(0,0,0,0.7);
+  }
+
+  .home-inner {
+    padding-top: 150px
+  }
+
+  .card-form{
+    opacity: 0.8;
+  }
+
+.fas{
+    @include check-mark(#008ed6, white)
+  }
+}
+
+#explore-section, #share-section{
+  .fas{
+    @include check-mark(white, #333)
+  }
+
+}
+#create-section{
+  .fas{
+    @include check-mark(#008ed6, white)
+  }
+}

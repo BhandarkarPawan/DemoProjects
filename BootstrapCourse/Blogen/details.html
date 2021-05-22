@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Bootstrap Theme</title>
+  </head>
+
+  <!-- START HERE -->
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Blogen</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="#navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="index.html" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="posts.html" class="nav-link">Posts</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="categories.html" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="users.html" class="nav-link">Users</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="main-header" class="py-2 mb-4 bg-secondary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Details</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="actions" ckass="py-4 mb-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a
+              href=""
+              class="btn btn-light btn-block"
+              data-toggle="modal"
+              data-target="#addPostModal"
+              ><i class="fas fa-arrow-left"></i> Back to Dashboard</a
+            >
+          </div>
+          <div class="col-md-3">
+            <a
+              href=""
+              class="btn btn-success btn-block"
+              data-toggle="modal"
+              data-target="#addCategoryModal"
+              ><i class="fas fa-plus"></i> Save Changed</a
+            >
+          </div>
+          <div class="col-md-3">
+            <a
+              href=""
+              class="btn btn-block btn-danger"
+              data-toggle="modal"
+              data-target="#addUserModal"
+              ><i class="fas fa-trash"></i> Delete post</a
+            >
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card mt-4">
+              <div class="card-header"><h4>Edit Post</h4></div>
+              <div class="card-body">
+                <div class="form">
+                  <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" value="Post One" />
+                  </div>
+                  <div class="form-group">
+                    <label for="Category">Category</label>
+                    <select class="form-control">
+                      <option value="">Web Development</option>
+                      <option value="">Blockchain</option>
+                      <option value="">N</option>
+                      <option value="">AI Engineering</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="image">Upload Image</label>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="image" />
+                      <label for="image" class="custom-file-label"
+                        >Choose File</label
+                      >
+                      <small class="form-text text-muted">Max Size: 3Mb</small>
+                    </div>
+                    <label for="body">Body</label>
+                    <textarea name="editor1" class="form-control">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur odio repellendus nobis sapiente corrupti cumque beatae molestiae deleniti, perspiciatis provident voluptates reiciendis, unde fugit ex assumenda, aliquam expedita quaerat error!</textarea
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+
+    <script>
+      // Get the current year for the copyright
+      $('#year').text(new Date().getFullYear());
+      CKEDITOR.replace('editor1');
+
+      // Add Smooth Scrolling
+      $('#main-nav a').on('click', function (e) {
+        // Check for a hash value
+        if (this.hash !== '') {
+          e.preventDefault();
+
+          // Store hash
+          const hash = this.hash;
+
+          // Animate Smooth Scroll
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            500,
+            function () {
+              // Add Hash to URL
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

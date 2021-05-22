@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,IACd;CAAC",
+    "sources": [
+        "../../looplab/styles/style.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

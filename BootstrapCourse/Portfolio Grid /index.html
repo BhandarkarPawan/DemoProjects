@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Bootstrap Theme</title>
+  </head>
+
+  <!-- START HERE -->
+  <body>
+    <div class="container">
+      <div class="header" id="main-header">
+        <div class="row no-gutters">
+          <div class="col-md-4 col-lg-5 text-right">
+            <img src="img/Ajmere-Dale-Square-thumbnail-2.jpg " alt="" />
+          </div>
+          <div class="col-md-8 col-lg-7">
+            <div class="d-flex flex-column">
+              <div class="p-5 bg-dark text-white">
+                <div
+                  class="
+                    d-flex
+                    flex-row
+                    justify-content-between
+                    align-items-center
+                  "
+                >
+                  <h1 class="display-4">John Doe</h1>
+                  <div class="d-none d-md-block">
+                    <a href="http://twitter.com" class="text-white"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </div>
+                  <div class="d-md-block">
+                    <a href="http://twitter.com" class="text-white"
+                      ><i class="fab fa-facebook"></i
+                    ></a>
+                  </div>
+                  <div class="d-md-block">
+                    <a href="http://twitter.com" class="text-white"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                  <div class="d-md-block">
+                    <a href="http://twitter.com" class="text-white"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="p-4" id="slogan">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequuntur, totam.
+              </div>
+              <div class="d-flex flex-row text-white align-items-stretch">
+                <div
+                  class="port-item p-4 bg-primary"
+                  data-toggle="collapse"
+                  data-target="#home"
+                >
+                  <i class="fas fa-home fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Home</span>
+                </div>
+                <div
+                  class="port-item p-4 bg-success"
+                  data-toggle="collapse"
+                  data-target="#resume"
+                >
+                  <i class="fas fa-graduation-cap fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Resume</span>
+                </div>
+                <div
+                  class="port-item p-4 bg-warning"
+                  data-toggle="collapse"
+                  data-target="#work"
+                >
+                  <i class="fas fa-folder-open fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Work</span>
+                </div>
+                <div
+                  class="port-item p-4 bg-danger"
+                  data-toggle="collapse"
+                  data-target="#contact"
+                >
+                  <i class="fas fa-envelope fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Contact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="home" class="collapse show">
+        <div class="card card-body bg-primary text-white py-5">
+          <h2>Welcome to my Page</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
+            quaerat!
+          </p>
+        </div>
+        <div class="card card-body py-5">
+          <h2>Skillset</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
+            quaerat! Lorem ipsum dolor sit amet.
+          </p>
+          <hr />
+          <h4>HTML 5</h4>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 100%"></div>
+          </div>
+          <h4>CSS 3</h4>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 100%"></div>
+          </div>
+          <h4>Javascript</h4>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 90%"></div>
+          </div>
+          <h4>PHP</h4>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 80%"></div>
+          </div>
+          <h4>Python</h4>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 50%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resume" class="collapse">
+        <div class="card card-body bg-success text-white py-5">
+          <h2>My Resume</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
+            quaerat!
+          </p>
+        </div>
+        <div class="card card-body py-5">
+          <h3>Where have I worked?</h3>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          architecto mollitia at enim sint officia!
+          <div class="card-deck pt-3">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Dev Masters</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto, voluptatem?
+                </p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Position: Full Stack Developer
+                </p>
+                <p class="p-2 mb-3 bg-dark text-white">Phone: +(444) 4444</p>
+              </div>
+              <div class="card-footer">
+                <h6 class="text-muted">Dates: 2015-2018</h6>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Macrohard</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto, voluptatem?
+                </p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Position: Web Developer
+                </p>
+                <p class="p-2 mb-3 bg-dark text-white">Phone: +(123) 3231</p>
+              </div>
+              <div class="card-footer">
+                <h6 class="text-muted">Dates: 2013-2015</h6>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Lorem, ipsum.</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto, voluptatem?
+                </p>
+                <p class="p-2 mb-3 bg-dark text-white">
+                  Position: Web Designer
+                </p>
+                <p class="p-2 mb-3 bg-dark text-white">Phone: +(3443) 1112</p>
+              </div>
+              <div class="card-footer">
+                <h6 class="text-muted">Dates: 2012-2013</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="work" class="collapse">
+        <div class="card card-body bg-warning text-white py-5">
+          <h2>My Work</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
+            quaerat!
+          </p>
+        </div>
+        <div class="card card-body py-y">
+          <h3>What have I built?</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
+            ad voluptatum laudantium doloremque eum asperiores perspiciatis
+            voluptas illo ipsam quasi?
+          </p>
+          <div class="row no-gutters">
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=252"
+                data-toggle="lightbox"
+                ><img
+                  src="https://unsplash.it/600/768.jpg?image=252"
+                  alt=""
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=253"
+                data-toggle="lightbox"
+                ><img
+                  src="https://unsplash.it/600/768.jpg?image=253"
+                  alt=""
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=254"
+                data-toggle="lightbox"
+                ><img
+                  src="https://unsplash.it/600/768.jpg?image=254"
+                  alt=""
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=255"
+                data-toggle="lightbox"
+                ><img
+                  src="https://unsplash.it/600/768.jpg?image=255"
+                  alt=""
+                  class="img-fluid"
+              /></a>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=256"
+                data-toggle="lightbox"
+                ><img
+                  src="https://unsplash.it/600/768.jpg?image=256"
+                  alt=""
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=257"
+                data-toggle="lightbox"
+                ><img
+                  src="https://unsplash.it/600/768.jpg?image=257"
+                  alt=""
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=258"
+                data-toggle="lightbox"
+                ><img
+                  src="https://unsplash.it/600/768.jpg?image=258"
+                  alt=""
+                  class="img-fluid"
+              /></a>
+            </div>
+            <div class="col-md-3">
+              <a
+                href="https://unsplash.it/1200/768.jpg?image=259"
+                data-toggle="lightbox"
+                ><img
+                  src="https://unsplash.it/600/768.jpg?image=259"
+                  alt=""
+                  class="img-fluid"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="collapse">
+        <div class="card card-body bg-danger text-white py-5">
+          <h2>Contact</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,
+            quaerat!
+          </p>
+        </div>
+        <div class="card card-body py-5">
+          <h3>Get in Touch</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ut
+            ullam exercitationem repellat dolore vel!
+          </p>
+          <form>
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-danger text-white">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control bg-dark text-white"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-danger text-white">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control bg-dark text-white"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-danger text-white">
+                      <i class="fas fa-pencil-alt"></i>
+                    </span>
+                  </div>
+                  <textarea
+                    type="text"
+                    class="form-control bg-dark text-white"
+                    placeholder="Name"
+                  ></textarea>
+                  <input
+                    type="submit"
+                    value="Submit"
+                    class="btn mt-3 btn-danger btn-block btn-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <footer id="main-footer" class="p-5 bg-dark text-white">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="#" class="btn btn-outline-light"
+              ><i class="fas fa-cloud"></i> Download Resume</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!--home-->
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"
+      integrity="sha512-YibiFIKqwi6sZFfPm5HNHQYemJwFbyyYHjrr3UT+VobMt/YBo1kBxgui5RWc4C3B4RJMYCdCAJkbXHt+irKfSA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+
+    <script>
+      $('.port-item').click(function () {
+        $('.collapse').collapse('hide');
+      });
+
+      $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+        e.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
+  </body>
+</html>
