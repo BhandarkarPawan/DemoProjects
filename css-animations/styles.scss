@@ -1,0 +1,37 @@
+.parent {
+  background-color: teal;
+  height: 400px;
+  width: 400px;
+
+  &:hover {
+    .child {
+      // transform: translateX(100%);
+      animation-play-state: paused;
+      background-color: red;
+    }
+  }
+}
+
+.child {
+  background-color: maroon;
+  height: 50%;
+  width: 50%;
+  animation: left-to-right 1s ease-in forwards infinite; // Fowards -> keep all the properties inside 100% at the end of the animation
+
+  // transition: transform 1s ease-in-out 3s;
+}
+
+@keyframes left-to-right {
+  100% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateX(100%) translateY(100%);
+  }
+  75% {
+    transform: translateX(100%);
+  }
+}

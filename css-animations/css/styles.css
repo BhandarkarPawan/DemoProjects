@@ -1,0 +1,58 @@
+.parent {
+  background-color: teal;
+  height: 400px;
+  width: 400px;
+}
+
+.parent:hover .child {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  background-color: red;
+}
+
+.child {
+  background-color: maroon;
+  height: 50%;
+  width: 50%;
+  -webkit-animation: left-to-right 1s ease-in forwards infinite;
+          animation: left-to-right 1s ease-in forwards infinite;
+}
+
+@-webkit-keyframes left-to-right {
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  25% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  50% {
+    -webkit-transform: translateX(100%) translateY(100%);
+            transform: translateX(100%) translateY(100%);
+  }
+  75% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes left-to-right {
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  25% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  50% {
+    -webkit-transform: translateX(100%) translateY(100%);
+            transform: translateX(100%) translateY(100%);
+  }
+  75% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
